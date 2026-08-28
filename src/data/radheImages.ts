@@ -170,6 +170,64 @@ export const RADHE_FLEET_IMAGES: RadheImageItem[] = [
   },
 ];
 
+export const RADHE_PHOTO_GALLERY = [
+  {
+    src: travellerFront1Img,
+    title: "Force Traveller – Front View",
+    label: "Tempo Traveller",
+  },
+  {
+    src: travellerFront2Img,
+    title: "Force Traveller – Ready for Yatra",
+    label: "Group Travel",
+  },
+  {
+    src: travellerFleetImg,
+    title: "Our Fleet Lineup",
+    label: "Fleet Showcase",
+  },
+  {
+    src: indigoImg,
+    title: "Tata Indigo Sedan",
+    label: "Sedan",
+  },
+  {
+    src: innovaImg,
+    title: "Toyota Innova Crysta",
+    label: "Luxury SUV",
+  },
+  {
+    src: tavernaImg,
+    title: "Chevrolet Tavera MUV",
+    label: "Spacious MUV",
+  },
+  {
+    src: travellerSideImg,
+    title: "Traveller – Side View",
+    label: "Highway Edition",
+  },
+  {
+    src: traveller7Img,
+    title: "Super Deluxe Traveller",
+    label: "VIP Group",
+  },
+  {
+    src: dzireImg,
+    title: "Maruti Suzuki Dzire",
+    label: "City Darshan",
+  },
+  {
+    src: bannerImg,
+    title: "Radhe Travels Fleet Banner",
+    label: "Official Fleet",
+  },
+  {
+    src: tourMomentImg,
+    title: "Live Pilgrimage Moment",
+    label: "Journey Moments",
+  },
+];
+
 export const RADHE_JOURNEY_MOMENTS = [
   {
     src: travellerFleetImg,

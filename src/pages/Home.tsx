@@ -1,5 +1,5 @@
 import { useState, useEffect, useRef } from "react";
-import { RADHE_FLEET_IMAGES, RADHE_JOURNEY_MOMENTS, RadheImageItem } from "@/data/radheImages";
+import { RADHE_FLEET_IMAGES, RADHE_JOURNEY_MOMENTS, RADHE_PHOTO_GALLERY, RadheImageItem } from "@/data/radheImages";
 
 const heroSlides = [
   {
@@ -513,6 +513,62 @@ export default function Home({ onNavigate }: HomeProps) {
               <div className="font-display font-bold text-base text-[#6B1E2E]">Instant Support</div>
               <div className="text-xs text-[#7A6A5A] font-body mt-1">Direct assistance at 9039223022</div>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* ============================================================ */}
+      {/* SEPARATE SECTION 3: RADHE PHOTO GALLERY — ALL 11 REAL PHOTOS */}
+      {/* ============================================================ */}
+      <section className="py-20 bg-[#1A1214]">
+        <div className="max-w-7xl mx-auto px-4">
+          <div className="text-center mb-12">
+            <div className="section-label mb-3" style={{ color: "#C9973A" }}>Our Real Photos · Authentic Vehicles</div>
+            <h2 className="font-display text-3xl md:text-5xl font-bold text-white mb-4">
+              Radhe <span className="text-[#C9973A]">Photo Gallery</span>
+            </h2>
+            <p className="text-white/70 font-body max-w-2xl mx-auto text-base">
+              Genuine, unedited photographs of our vehicles taken in Ujjain — what you see is exactly what you get.
+            </p>
+            <div className="gold-divider mx-auto mt-4" />
+          </div>
+
+          {/* Masonry-style photo grid */}
+          <div className="columns-1 sm:columns-2 lg:columns-3 gap-5 space-y-5">
+            {RADHE_PHOTO_GALLERY.map((photo, idx) => (
+              <div
+                key={idx}
+                className="break-inside-avoid group relative rounded-2xl overflow-hidden border border-[#3A2830] cursor-pointer mb-5"
+                onClick={() => setLightboxItem({ src: photo.src, title: photo.title, badge: photo.label })}
+              >
+                <img
+                  src={photo.src}
+                  alt={photo.title}
+                  className="w-full object-cover group-hover:scale-105 transition-transform duration-500"
+                  loading="lazy"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-[#1A1214]/90 via-[#1A1214]/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                {/* Label badge */}
+                <div className="absolute top-3 left-3">
+                  <span className="bg-[#C9973A] text-[#1A1214] font-body font-bold text-[10px] tracking-wider uppercase px-2.5 py-1 rounded-full shadow">
+                    {photo.label}
+                  </span>
+                </div>
+                {/* Bottom overlay */}
+                <div className="absolute bottom-0 inset-x-0 p-4 translate-y-full group-hover:translate-y-0 transition-transform duration-300">
+                  <h4 className="font-display text-base font-bold text-white mb-1">{photo.title}</h4>
+                  <div className="flex items-center gap-2 text-xs text-[#C9973A] font-body font-medium">
+                    <span>🔍 Click to enlarge</span>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+
+          <div className="text-center mt-12">
+            <button onClick={() => nav("contact")} className="btn-gold">
+              Book Your Vehicle Today →
+            </button>
           </div>
         </div>
       </section>
