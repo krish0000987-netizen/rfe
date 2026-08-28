@@ -1,14 +1,19 @@
-import innovaImg from "@/imports/WhatsApp_Image_2026-08-27_at_2.20.15_PM.jpeg";
-import tavernaImg from "@/imports/WhatsApp_Image_2026-08-27_at_2.20.16_PM_1_.jpeg";
-import traveller7Img from "@/imports/WhatsApp_Image_2026-08-27_at_2.20.17_PM_1_.jpeg";
-import dzireImg from "@/imports/WhatsApp_Image_2026-08-27_at_2.20.17_PM.jpeg";
-import travellerFront1Img from "@/imports/WhatsApp_Image_2026-08-27_at_2.20.13_PM.jpeg";
-import travellerFront2Img from "@/imports/WhatsApp_Image_2026-08-27_at_2.20.14_PM.jpeg";
-import travellerFleetImg from "@/imports/WhatsApp_Image_2026-08-27_at_2.20.14_PM_1_.jpeg";
-import indigoImg from "@/imports/WhatsApp_Image_2026-08-27_at_2.20.15_PM_1_.jpeg";
-import travellerSideImg from "@/imports/WhatsApp_Image_2026-08-27_at_2.20.16_PM.jpeg";
-import bannerImg from "@/imports/WhatsApp_Image_2026-08-27_at_2.20.18_PM.jpeg";
-import tourMomentImg from "@/imports/WhatsApp_Image_2026-08-27_at_2.20.18_PM_1_.jpeg";
+// Images are served from /public/radhe/ as static assets — no Vite imports needed.
+// This ensures they load correctly in all environments (dev, preview, deployed).
+
+const BASE = "/radhe";
+
+const innovaImg        = `${BASE}/WhatsApp_Image_2026-08-27_at_2.20.15_PM.jpeg`;
+const tavernaImg       = `${BASE}/WhatsApp_Image_2026-08-27_at_2.20.16_PM_1_.jpeg`;
+const traveller7Img    = `${BASE}/WhatsApp_Image_2026-08-27_at_2.20.17_PM_1_.jpeg`;
+const dzireImg         = `${BASE}/WhatsApp_Image_2026-08-27_at_2.20.17_PM.jpeg`;
+const travellerFront1Img = `${BASE}/WhatsApp_Image_2026-08-27_at_2.20.13_PM.jpeg`;
+const travellerFront2Img = `${BASE}/WhatsApp_Image_2026-08-27_at_2.20.14_PM.jpeg`;
+const travellerFleetImg  = `${BASE}/WhatsApp_Image_2026-08-27_at_2.20.14_PM_1_.jpeg`;
+const indigoImg        = `${BASE}/WhatsApp_Image_2026-08-27_at_2.20.15_PM_1_.jpeg`;
+const travellerSideImg = `${BASE}/WhatsApp_Image_2026-08-27_at_2.20.16_PM.jpeg`;
+const bannerImg        = `${BASE}/WhatsApp_Image_2026-08-27_at_2.20.18_PM.jpeg`;
+const tourMomentImg    = `${BASE}/WhatsApp_Image_2026-08-27_at_2.20.18_PM_1_.jpeg`;
 
 export interface RadheImageItem {
   id: string;
