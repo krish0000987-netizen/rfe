@@ -18,3 +18,5 @@ logs/
 # beside it.
 /.plugins/
 /.opencode-skills/
+.DS_Store
+*.DS_Store

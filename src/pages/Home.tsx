@@ -1,5 +1,6 @@
 import { useState, useEffect, useRef } from "react";
 import { RADHE_FLEET_IMAGES, RADHE_JOURNEY_MOMENTS, RADHE_PHOTO_GALLERY, RadheImageItem } from "@/data/radheImages";
+import DestinationSections from "@/components/DestinationSections";
 
 const heroSlides = [
   {
@@ -8,40 +9,41 @@ const heroSlides = [
     caption: "Mahakaleshwar Jyotirlinga",
   },
   {
-    url: "https://images.unsplash.com/photo-1584185438408-88532feff8d4?w=1920&h=1080&fit=crop&auto=format",
-    alt: "Ghat on Shipra River in Ujjain",
-    caption: "Shipra River Ghats",
+    url: "https://images.unsplash.com/photo-1667667186743-924d5172fa4a?w=1920&h=1080&fit=crop&auto=format",
+    alt: "Omkareshwar Jyotirlinga on sacred Narmada river",
+    caption: "Omkareshwar Jyotirlinga",
   },
   {
-    url: "https://images.unsplash.com/photo-1784240256561-96f3264d221a?w=1920&h=1080&fit=crop&auto=format",
-    alt: "Scenic Indian highway road journey",
-    caption: "Comfortable Road Journeys",
+    url: "https://images.unsplash.com/photo-1584185438408-88532feff8d4?w=1920&h=1080&fit=crop&auto=format",
+    alt: "Ghat on Shipra River in Ujjain",
+    caption: "Ujjain Ram Ghat Aarti",
+  },
+  {
+    url: "https://images.unsplash.com/photo-1784240256663-f53a45989d1c?w=1920&h=1080&fit=crop&auto=format",
+    alt: "Jahaz Mahal floating palace in Mandav Mandu",
+    caption: "Mandav (Mandu) Heritage",
   },
   {
     url: "https://images.unsplash.com/photo-1658730510499-8c8e84f4db38?w=1920&h=1080&fit=crop&auto=format",
-    alt: "Mahakal temple Ujjain",
-    caption: "Sacred Mahakal Lok",
+    alt: "Kubreshwar Dham Sehore sacred Shivling pilgrimage",
+    caption: "Kubreshwar Dham (Sehore)",
   },
   {
-    url: "https://images.unsplash.com/photo-1641803187805-3592b4cfeddb?w=1920&h=1080&fit=crop&auto=format",
-    alt: "Madhya Pradesh city view",
-    caption: "Madhya Pradesh Travel",
-  },
-  {
-    url: "https://images.unsplash.com/photo-1694667509674-676629c9d069?w=1920&h=1080&fit=crop&auto=format",
-    alt: "Ujjain city view",
-    caption: "Beautiful Ujjain",
+    url: "https://images.unsplash.com/photo-1784240256561-96f3264d221a?w=1920&h=1080&fit=crop&auto=format",
+    alt: "Scenic Madhya Pradesh highway road journey",
+    caption: "Comfortable Road Journeys",
   },
 ];
 
 const destinations = [
-  { name: "Mahakaleshwar Temple", img: "https://images.unsplash.com/photo-1658730487395-dcc99f5d997c?w=400&h=300&fit=crop&auto=format" },
-  { name: "Mahakal Lok", img: "https://images.unsplash.com/photo-1658730510499-8c8e84f4db38?w=400&h=300&fit=crop&auto=format" },
-  { name: "Ram Ghat", img: "https://images.unsplash.com/photo-1584185438408-88532feff8d4?w=400&h=300&fit=crop&auto=format" },
-  { name: "Shipra River", img: "https://images.unsplash.com/photo-1694667509674-676629c9d069?w=400&h=300&fit=crop&auto=format" },
-  { name: "Kal Bhairav Temple", img: "https://images.unsplash.com/photo-1658730600296-a0276b5749ca?w=400&h=300&fit=crop&auto=format" },
-  { name: "Harsiddhi Temple", img: "https://images.unsplash.com/photo-1658730458768-8b8cc0c00955?w=400&h=300&fit=crop&auto=format" },
-  { name: "Sandipani Ashram", img: "https://images.unsplash.com/photo-1658730557753-caf6bbc4a0bc?w=400&h=300&fit=crop&auto=format" },
+  { name: "Mahakaleshwar Temple", img: "https://images.unsplash.com/photo-1658730487395-dcc99f5d997c?w=400&h=300&fit=crop&auto=format", tag: "Jyotirlinga" },
+  { name: "Omkareshwar Jyotirlinga", img: "https://images.unsplash.com/photo-1667667186743-924d5172fa4a?w=400&h=300&fit=crop&auto=format", tag: "Island Jyotirlinga" },
+  { name: "Ujjain Ram Ghat", img: "https://images.unsplash.com/photo-1584185438408-88532feff8d4?w=400&h=300&fit=crop&auto=format", tag: "Shipra Aarti" },
+  { name: "Mandav (Mandu)", img: "https://images.unsplash.com/photo-1784240256663-f53a45989d1c?w=400&h=300&fit=crop&auto=format", tag: "Heritage Fort" },
+  { name: "Kubreshwar Dham (Sehore)", img: "https://images.unsplash.com/photo-1658730510499-8c8e84f4db38?w=400&h=300&fit=crop&auto=format", tag: "Shiva Dham" },
+  { name: "Kal Bhairav Temple", img: "https://images.unsplash.com/photo-1658730600296-a0276b5749ca?w=400&h=300&fit=crop&auto=format", tag: "Guardian Deity" },
+  { name: "Harsiddhi Temple", img: "https://images.unsplash.com/photo-1658730458768-8b8cc0c00955?w=400&h=300&fit=crop&auto=format", tag: "Shaktipeeth" },
+  { name: "Sandipani Ashram", img: "https://images.unsplash.com/photo-1705291490318-6cc8cb88a1f3?w=400&h=300&fit=crop&auto=format", tag: "Krishna Heritage" },
 ];
 
 const services = [
@@ -63,9 +65,10 @@ const steps = [
 
 const filterCategories = [
   "All Fleet",
+  "Tempo Travellers",
+  "Buses",
   "Sedans",
   "SUVs & MUVs",
-  "Tempo Travellers",
   "Fleet Highlights",
 ];
 
@@ -203,10 +206,11 @@ export default function Home({ onNavigate }: HomeProps) {
             <div>
               <label className="text-xs text-[#7A6A5A] font-body font-semibold uppercase tracking-wider block mb-1">Vehicle</label>
               <select className="w-full border border-[#E0D4C0] rounded px-3 py-2.5 text-sm font-body focus:outline-none focus:border-[#6B1E2E] bg-[#FAF6F0]">
-                <option>Sedan (Dzire / Indigo)</option>
-                <option>SUV (Innova Crysta / Tavera)</option>
-                <option>Tempo Traveller (12–17 Seater)</option>
-                <option>Luxury Group Van</option>
+                <option>4+1 Sedan – Dzire / Indigo (5 Seater)</option>
+                <option>6+1 Ertiga / 7+1 Innova Crysta</option>
+                <option>9+1 Tavera / 12+1 Toofan</option>
+                <option>Tempo Traveller – 12 / 14 / 17 / 20 / 26 Seater</option>
+                <option>Mini Bus / Coach – 30 / 35 / 40 / 45 / 50 / 55 Seater</option>
               </select>
             </div>
             <div>
@@ -250,7 +254,7 @@ export default function Home({ onNavigate }: HomeProps) {
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {[
-              { icon: "🚗", title: "Own & Verified Fleet", desc: "Clean sedans, luxury SUVs, and spacious 12-17 seater Force Travellers ready 24/7." },
+              { icon: "🚗", title: "Own & Verified Fleet", desc: "Clean 4+1 sedans, 6+1/7+1/9+1/12+1 MUVs, 12-26 seater Tempo Travellers & 30-55 seater Buses ready 24/7." },
               { icon: "🛡️", title: "Reliable & Punctual", desc: "Dependable, on-time service for Mahakal Bhasma Aarti, railway station, and airport pickups." },
               { icon: "🤝", title: "Experienced Drivers", desc: "Courteous, verified drivers with extensive route knowledge of Ujjain and Madhya Pradesh." },
               { icon: "📍", title: "Local Pilgrimage Expertise", desc: "Deep knowledge of Mahakaleshwar Jyotirlinga, Omkareshwar, and sacred sites." },
@@ -402,36 +406,13 @@ export default function Home({ onNavigate }: HomeProps) {
         </div>
       </section>
 
-      {/* EXPLORE UJJAIN */}
-      <section className="py-20 bg-[#FAF6F0]">
-        <div className="max-w-7xl mx-auto px-4">
-          <div className="text-center mb-14">
-            <div className="section-label mb-3">Sacred Destinations</div>
-            <h2 className="font-display text-3xl md:text-4xl font-bold text-[#1A1214] mb-4">
-              Explore <span className="text-[#6B1E2E]">Ujjain</span>
-            </h2>
-            <div className="gold-divider mx-auto" />
-          </div>
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
-            {destinations.map((d) => (
-              <div key={d.name} className="img-hover-zoom rounded-xl overflow-hidden relative group cursor-pointer" onClick={() => nav("ujjain")}>
-                <img src={d.img} alt={d.name} className="w-full h-48 object-cover" loading="lazy" />
-                <div className="absolute inset-0 bg-gradient-to-t from-[#1A1214]/80 via-transparent to-transparent" />
-                <div className="absolute bottom-3 left-3 right-3">
-                  <p className="font-display text-sm font-semibold text-white">{d.name}</p>
-                </div>
-              </div>
-            ))}
-            <div
-              className="rounded-xl overflow-hidden relative cursor-pointer bg-[#6B1E2E] flex flex-col items-center justify-center h-48 card-hover"
-              onClick={() => nav("ujjain")}
-            >
-              <span className="text-4xl mb-2">🕌</span>
-              <p className="font-display text-sm font-semibold text-white text-center px-3">More Destinations →</p>
-            </div>
-          </div>
-        </div>
-      </section>
+      {/* ============================================================ */}
+      {/* SEPARATE DESTINATION SHOWCASE SECTIONS: UJJAIN, MAHAKAL, OMKARESHWAR, MANDAV, KUBRESHWAR DHAM */}
+      {/* ============================================================ */}
+      <DestinationSections
+        onNavigate={nav}
+        onOpenLightbox={(item) => setLightboxItem(item)}
+      />
 
       {/* ============================================================ */}
       {/* SEPARATE SECTION 2: CAPTURED TRAVEL MOMENTS & ON-ROAD HIGHLIGHTS */}
