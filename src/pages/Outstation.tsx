@@ -1,4 +1,15 @@
 import { useState } from "react";
+import {
+  innovaImg,
+  tavernaImg,
+  traveller7Img,
+  dzireImg,
+  travellerFront1Img,
+  travellerFleetImg,
+  bannerImg,
+  tourMomentImg,
+  travellerSideImg,
+} from "@/data/radheImages";
 
 interface OutstationProps {
   onNavigate: (page: string) => void;
@@ -14,12 +25,13 @@ const tripTypes = [
 ];
 
 const popularDestinations = [
-  { city: "Indore", dist: "~55 km", img: "https://images.unsplash.com/photo-1641803187805-3592b4cfeddb?w=400&h=300&fit=crop&auto=format", desc: "Commercial capital of MP — shopping, food and culture" },
-  { city: "Omkareshwar", dist: "~130 km", img: "https://images.unsplash.com/photo-1658730557753-caf6bbc4a0bc?w=400&h=300&fit=crop&auto=format", desc: "Sacred Jyotirlinga island destination on Narmada River" },
-  { city: "Bhopal", dist: "~185 km", img: "https://images.unsplash.com/photo-1705291490318-6cc8cb88a1f3?w=400&h=300&fit=crop&auto=format", desc: "Capital of Madhya Pradesh — lakes, history and heritage" },
-  { city: "Dewas", dist: "~35 km", img: "https://images.unsplash.com/photo-1710987759289-ee6d002cb7d9?w=400&h=300&fit=crop&auto=format", desc: "Nearby city known for the Chamunda Mata temple" },
-  { city: "Maheshwar", dist: "~90 km", img: "https://images.unsplash.com/photo-1667667186743-924d5172fa4a?w=400&h=300&fit=crop&auto=format", desc: "Historic fort town on the Narmada with stunning ghats" },
-  { city: "Mandu", dist: "~100 km", img: "https://images.unsplash.com/photo-1784240256663-f53a45989d1c?w=400&h=300&fit=crop&auto=format", desc: "Ancient fortress city with magnificent Mughal-era monuments" },
+  { city: "Indore", dist: "~55 km", img: innovaImg, desc: "Commercial capital of MP — shopping, food and culture" },
+  { city: "Omkareshwar", dist: "~130 km", img: bannerImg, desc: "Sacred Jyotirlinga island destination on Narmada River" },
+  { city: "Bhopal", dist: "~185 km", img: dzireImg, desc: "Capital of Madhya Pradesh — lakes, history and heritage" },
+  { city: "Dewas", dist: "~35 km", img: tavernaImg, desc: "Nearby city known for the Chamunda Mata temple" },
+  { city: "Maheshwar", dist: "~90 km", img: traveller7Img, desc: "Historic fort town on the Narmada with stunning ghats" },
+  { city: "Mandu", dist: "~100 km", img: travellerSideImg, desc: "Ancient fortress city with magnificent Mughal-era monuments" },
+  { city: "Kubreshwar Dham", dist: "~140 km", img: tourMomentImg, desc: "Pujya Pandit Pradeep Mishra Ji's sacred Shiva pilgrimage in Sehore" },
 ];
 
 export default function Outstation({ onNavigate }: OutstationProps) {
@@ -31,8 +43,8 @@ export default function Outstation({ onNavigate }: OutstationProps) {
       {/* HERO */}
       <section className="relative h-72 md:h-96 overflow-hidden">
         <img
-          src="https://images.unsplash.com/photo-1784240256561-96f3264d221a?w=1920&h=800&fit=crop&auto=format"
-          alt="Scenic Indian highway outstation travel"
+          src={travellerFleetImg}
+          alt="Scenic outstation travel"
           className="w-full h-full object-cover"
         />
         <div className="absolute inset-0 bg-[#1A1214]/65" />

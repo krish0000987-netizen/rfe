@@ -1,3 +1,5 @@
+import { travellerFleetImg, bannerImg } from "@/data/radheImages";
+
 interface TourPackagesProps {
   onNavigate: (page: string) => void;
 }
@@ -58,7 +60,7 @@ export default function TourPackages({ onNavigate }: TourPackagesProps) {
       {/* HERO */}
       <section className="relative h-72 md:h-96 overflow-hidden">
         <img
-          src="https://images.unsplash.com/photo-1784240256561-96f3264d221a?w=1920&h=800&fit=crop&auto=format"
+          src={travellerFleetImg}
           alt="Travel destinations"
           className="w-full h-full object-cover"
         />
@@ -135,7 +137,7 @@ export default function TourPackages({ onNavigate }: TourPackagesProps) {
       {/* CUSTOM TOUR */}
       <section className="py-20 bg-[#6B1E2E] relative overflow-hidden">
         <div className="absolute inset-0 opacity-10">
-          <img src="https://images.unsplash.com/photo-1658730487395-dcc99f5d997c?w=1920&h=600&fit=crop&auto=format" alt="" className="w-full h-full object-cover" />
+          <img src={bannerImg} alt="" className="w-full h-full object-cover" />
         </div>
         <div className="relative z-10 max-w-3xl mx-auto px-4 text-center">
           <div className="section-label mb-4" style={{ color: "#C9973A" }}>Fully Flexible</div>

@@ -1,49 +1,54 @@
 import { useState, useEffect, useRef } from "react";
-import { RADHE_FLEET_IMAGES, RADHE_JOURNEY_MOMENTS, RADHE_PHOTO_GALLERY, RadheImageItem } from "@/data/radheImages";
+import {
+  RADHE_FLEET_IMAGES,
+  RADHE_JOURNEY_MOMENTS,
+  RADHE_PHOTO_GALLERY,
+  RadheImageItem,
+  travellerFleetImg,
+  bannerImg,
+  travellerFront1Img,
+  tourMomentImg,
+  innovaImg,
+  dzireImg,
+  tavernaImg,
+  indigoImg,
+  traveller7Img,
+  travellerFront2Img,
+  travellerSideImg,
+} from "@/data/radheImages";
 import DestinationSections from "@/components/DestinationSections";
 
 const heroSlides = [
   {
-    url: "https://images.unsplash.com/photo-1658730487395-dcc99f5d997c?w=1920&h=1080&fit=crop&auto=format",
-    alt: "Mahakaleshwar Jyotirlinga temple at Ujjain",
-    caption: "Mahakaleshwar Jyotirlinga",
+    url: travellerFleetImg,
+    alt: "Shree Radhe Radhe Travels Fleet at Ujjain",
+    caption: "Mahakaleshwar Jyotirlinga Tours",
   },
   {
-    url: "https://images.unsplash.com/photo-1667667186743-924d5172fa4a?w=1920&h=1080&fit=crop&auto=format",
-    alt: "Omkareshwar Jyotirlinga on sacred Narmada river",
-    caption: "Omkareshwar Jyotirlinga",
+    url: bannerImg,
+    alt: "Shree Radhe Radhe Travels Highway Tour",
+    caption: "Omkareshwar Jyotirlinga Yatra",
   },
   {
-    url: "https://images.unsplash.com/photo-1584185438408-88532feff8d4?w=1920&h=1080&fit=crop&auto=format",
-    alt: "Ghat on Shipra River in Ujjain",
-    caption: "Ujjain Ram Ghat Aarti",
+    url: travellerFront1Img,
+    alt: "Force Traveller Ready for Ujjain Darshan",
+    caption: "Ujjain Local Ram Ghat Aarti",
   },
   {
-    url: "https://images.unsplash.com/photo-1784240256663-f53a45989d1c?w=1920&h=1080&fit=crop&auto=format",
-    alt: "Jahaz Mahal floating palace in Mandav Mandu",
-    caption: "Mandav (Mandu) Heritage",
+    url: travellerSideImg,
+    alt: "Comfortable Highway Edition for Mandav Tour",
+    caption: "Mandav (Mandu) Heritage Tour",
   },
   {
-    url: "https://images.unsplash.com/photo-1658730510499-8c8e84f4db38?w=1920&h=1080&fit=crop&auto=format",
-    alt: "Kubreshwar Dham Sehore sacred Shivling pilgrimage",
+    url: tourMomentImg,
+    alt: "Kubreshwar Dham Sehore Devotee Tour",
     caption: "Kubreshwar Dham (Sehore)",
   },
   {
-    url: "https://images.unsplash.com/photo-1784240256561-96f3264d221a?w=1920&h=1080&fit=crop&auto=format",
-    alt: "Scenic Madhya Pradesh highway road journey",
-    caption: "Comfortable Road Journeys",
+    url: innovaImg,
+    alt: "Toyota Innova Crysta VIP Service",
+    caption: "VIP Mahakal & Outstation Travel",
   },
-];
-
-const destinations = [
-  { name: "Mahakaleshwar Temple", img: "https://images.unsplash.com/photo-1658730487395-dcc99f5d997c?w=400&h=300&fit=crop&auto=format", tag: "Jyotirlinga" },
-  { name: "Omkareshwar Jyotirlinga", img: "https://images.unsplash.com/photo-1667667186743-924d5172fa4a?w=400&h=300&fit=crop&auto=format", tag: "Island Jyotirlinga" },
-  { name: "Ujjain Ram Ghat", img: "https://images.unsplash.com/photo-1584185438408-88532feff8d4?w=400&h=300&fit=crop&auto=format", tag: "Shipra Aarti" },
-  { name: "Mandav (Mandu)", img: "https://images.unsplash.com/photo-1784240256663-f53a45989d1c?w=400&h=300&fit=crop&auto=format", tag: "Heritage Fort" },
-  { name: "Kubreshwar Dham (Sehore)", img: "https://images.unsplash.com/photo-1658730510499-8c8e84f4db38?w=400&h=300&fit=crop&auto=format", tag: "Shiva Dham" },
-  { name: "Kal Bhairav Temple", img: "https://images.unsplash.com/photo-1658730600296-a0276b5749ca?w=400&h=300&fit=crop&auto=format", tag: "Guardian Deity" },
-  { name: "Harsiddhi Temple", img: "https://images.unsplash.com/photo-1658730458768-8b8cc0c00955?w=400&h=300&fit=crop&auto=format", tag: "Shaktipeeth" },
-  { name: "Sandipani Ashram", img: "https://images.unsplash.com/photo-1705291490318-6cc8cb88a1f3?w=400&h=300&fit=crop&auto=format", tag: "Krishna Heritage" },
 ];
 
 const services = [
@@ -654,7 +659,7 @@ export default function Home({ onNavigate }: HomeProps) {
       {/* FINAL CTA */}
       <section className="py-20 bg-[#1A1214] relative overflow-hidden">
         <div className="absolute inset-0 opacity-20">
-          <img src="https://images.unsplash.com/photo-1658730487395-dcc99f5d997c?w=1920&h=600&fit=crop&auto=format" alt="" className="w-full h-full object-cover" />
+          <img src={bannerImg} alt="Shree Radhe Radhe Travels Fleet" className="w-full h-full object-cover" />
         </div>
         <div className="relative z-10 max-w-3xl mx-auto px-4 text-center">
           <div className="section-label mb-4" style={{ color: "#C9973A" }}>Ready to Travel?</div>

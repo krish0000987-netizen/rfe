@@ -26,19 +26,16 @@ const photos = [
   { src: travellerSideImg, alt: "Force Traveller Side View — Highway Edition", cat: "Our Vehicles" },
   { src: bannerImg, alt: "Shree Radhe Radhe Travels Official Fleet", cat: "Our Vehicles" },
   { src: tourMomentImg, alt: "Pilgrimage Yatra Tour Moment — Shree Radhe Radhe Travels", cat: "Our Vehicles" },
-  // Ujjain
-  { src: "https://images.unsplash.com/photo-1658730487395-dcc99f5d997c?w=600&h=450&fit=crop&auto=format", alt: "Mahakaleshwar Jyotirlinga Temple Ujjain", cat: "Ujjain" },
-  { src: "https://images.unsplash.com/photo-1658730510499-8c8e84f4db38?w=600&h=450&fit=crop&auto=format", alt: "Mahakal Lok Ujjain", cat: "Ujjain" },
-  { src: "https://images.unsplash.com/photo-1584185438408-88532feff8d4?w=600&h=450&fit=crop&auto=format", alt: "Ram Ghat Shipra River Ujjain", cat: "Ujjain" },
-  { src: "https://images.unsplash.com/photo-1694667509674-676629c9d069?w=600&h=450&fit=crop&auto=format", alt: "Ujjain City View", cat: "Ujjain" },
-  { src: "https://images.unsplash.com/photo-1658730600296-a0276b5749ca?w=600&h=450&fit=crop&auto=format", alt: "Ujjain Temple", cat: "Ujjain" },
-  { src: "https://images.unsplash.com/photo-1658730458768-8b8cc0c00955?w=600&h=450&fit=crop&auto=format", alt: "Ujjain Harsiddhi Temple", cat: "Ujjain" },
-  { src: "https://images.unsplash.com/photo-1667667186743-924d5172fa4a?w=600&h=450&fit=crop&auto=format", alt: "Shipra River Bridge Ujjain", cat: "Ujjain" },
-  // Destinations
-  { src: "https://images.unsplash.com/photo-1784240256561-96f3264d221a?w=600&h=450&fit=crop&auto=format", alt: "Scenic Indian road journey", cat: "Destinations" },
-  { src: "https://images.unsplash.com/photo-1785651975036-a282bbf0275d?w=600&h=450&fit=crop&auto=format", alt: "Indian highway bridge", cat: "Destinations" },
-  { src: "https://images.unsplash.com/photo-1705291490318-6cc8cb88a1f3?w=600&h=450&fit=crop&auto=format", alt: "Madhya Pradesh landscape", cat: "Destinations" },
-  { src: "https://images.unsplash.com/photo-1641803187805-3592b4cfeddb?w=600&h=450&fit=crop&auto=format", alt: "MP City Aerial View", cat: "Destinations" },
+  // Ujjain & Pilgrimage
+  { src: travellerFront3Img, alt: "Mahakaleshwar Jyotirlinga Darshan Tour Fleet", cat: "Ujjain" },
+  { src: tourMomentImg, alt: "Shipra River & Ram Ghat Darshan Journey", cat: "Ujjain" },
+  { src: dzireImg, alt: "Ujjain Local City & Temple Darshan", cat: "Ujjain" },
+  { src: indigoImg, alt: "Harsiddhi Mata & Kaal Bhairav Pilgrimage", cat: "Ujjain" },
+  // Destinations & Outstation
+  { src: bannerImg, alt: "Omkareshwar Jyotirlinga Highway Yatra", cat: "Destinations" },
+  { src: travellerSideImg, alt: "Mandav (Mandu) Heritage Fortress Tour", cat: "Destinations" },
+  { src: traveller7Img, alt: "Kubreshwar Dham Sehore Devotee Yatra", cat: "Destinations" },
+  { src: innovaImg, alt: "Indore & Bhopal Outstation VIP Travel", cat: "Destinations" },
 ];
 
 export default function Gallery() {
@@ -52,7 +49,7 @@ export default function Gallery() {
       {/* HERO */}
       <section className="relative h-64 md:h-80 overflow-hidden">
         <img
-          src="https://images.unsplash.com/photo-1658730487395-dcc99f5d997c?w=1920&h=600&fit=crop&auto=format"
+          src={bannerImg}
           alt="Gallery"
           className="w-full h-full object-cover"
         />

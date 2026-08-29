@@ -1,3 +1,17 @@
+import {
+  innovaImg,
+  tavernaImg,
+  traveller7Img,
+  dzireImg,
+  travellerFront1Img,
+  travellerFront2Img,
+  travellerFleetImg,
+  indigoImg,
+  travellerSideImg,
+  bannerImg,
+  tourMomentImg,
+} from "@/data/radheImages";
+
 export interface DestinationHighlight {
   title: string;
   desc: string;
@@ -51,7 +65,7 @@ export const DESTINATION_SECTIONS: DestinationSectionData[] = [
     travelTime: "Full Day / Half Day",
     bestTime: "Year-Round (October to March ideal)",
     idealDuration: "6 to 10 Hours",
-    heroImage: "https://images.unsplash.com/photo-1584185438408-88532feff8d4?w=1400&h=700&fit=crop&auto=format",
+    heroImage: dzireImg,
     overview: "Ujjain, the historic Avantika, is one of the seven sacred Moksha-giving cities of Sanatan Dharma. Beyond the world-famous Mahakaleshwar temple, the city is dotted with spiritually charged spots — from the sacred Ram Ghat on Shipra River to the legendary Sandipani Ashram where Lord Krishna studied, and the ferocious guardian shrine of Kaal Bhairav.",
     significance: "Crucial pilgrimage for devotees seeking total spiritual purification, Astrological remedies at Mangalnath, and Shakti blessings at Maa Harsiddhi Temple.",
     themeColor: {
@@ -63,39 +77,27 @@ export const DESTINATION_SECTIONS: DestinationSectionData[] = [
     highlights: [
       {
         title: "Ram Ghat & Shipra Maha Aarti",
-        desc: "The sacred bathing ghat on River Shipra hosting mesmerizing evening Deepdan and Maha Aarti with thousand floating oil lamps.",
-        img: "https://images.unsplash.com/photo-1584185438408-88532feff8d4?w=800&h=500&fit=crop&auto=format",
+        desc: "The sacred bathing ghat on River Shipra hosting mesmerizing evening Deepdan and Maha Aarti with floating oil lamps.",
+        img: tourMomentImg,
         tag: "Holy Ghat",
       },
       {
         title: "Maa Harsiddhi Shaktipeeth",
         desc: "One of the 51 holy Shaktipeeths where Devi Sati's elbow fell; famed for its towering 13th-century Deepstambhs lit at dusk.",
-        img: "https://images.unsplash.com/photo-1658730458768-8b8cc0c00955?w=800&h=500&fit=crop&auto=format",
+        img: indigoImg,
         tag: "Shaktipeeth",
       },
       {
         title: "Kaal Bhairav Mandir",
         desc: "Ancient guardian temple of Ujjain where traditional offerings are made and the deity is revered as the celestial Kotwal of the city.",
-        img: "https://images.unsplash.com/photo-1658730600296-a0276b5749ca?w=800&h=500&fit=crop&auto=format",
+        img: tavernaImg,
         tag: "Guardian Deity",
       },
       {
         title: "Sandipani Ashram & Gomti Kund",
         desc: "The venerated hermitage where Lord Krishna, Balarama, and Sudama learned 64 arts in 64 days under Guru Sandipani.",
-        img: "https://images.unsplash.com/photo-1705291490318-6cc8cb88a1f3?w=800&h=500&fit=crop&auto=format",
+        img: dzireImg,
         tag: "Krishna Heritage",
-      },
-      {
-        title: "Mangalnath Temple",
-        desc: "Perched along the serene Shipra river, revered as the celestial birthplace of planet Mars (Mangal) and site for Bhat Puja.",
-        img: "https://images.unsplash.com/photo-1658730557753-caf6bbc4a0bc?w=800&h=500&fit=crop&auto=format",
-        tag: "Navagraha Shrine",
-      },
-      {
-        title: "Vedh Shala (Jantar Mantar)",
-        desc: "Historic astronomical observatory constructed in 1719 by Maharaja Jai Singh II for celestial time calculation.",
-        img: "https://images.unsplash.com/photo-1641803187805-3592b4cfeddb?w=800&h=500&fit=crop&auto=format",
-        tag: "Ancient Science",
       },
     ],
     itinerary: [
@@ -127,7 +129,7 @@ export const DESTINATION_SECTIONS: DestinationSectionData[] = [
     travelTime: "24/7 Cab Service available",
     bestTime: "Throughout the year (Shravan & Shivratri special)",
     idealDuration: "4 to 6 Hours (Darshan + Mahakal Lok)",
-    heroImage: "https://images.unsplash.com/photo-1658730487395-dcc99f5d997c?w=1400&h=700&fit=crop&auto=format",
+    heroImage: travellerFleetImg,
     overview: "Shree Mahakaleshwar is the only south-facing (Dakshinmukhi) Jyotirlinga among the 12 sacred Jyotirlingas of Lord Shiva. The temple is famed for its iconic Bhasma Aarti performed every dawn with sacred ash, chanting of Vedic mantras, and profound spiritual energy. The newly expanded 900-meter Shri Mahakal Lok corridor adds world-class grand walkways and sculptures depicting Shiva Purana stories.",
     significance: "Lord Mahakal is the master of time, death and eternity. Seeking His blessings liberates souls from fear of untimely death (Akaal Mrityu).",
     themeColor: {
@@ -140,26 +142,26 @@ export const DESTINATION_SECTIONS: DestinationSectionData[] = [
       {
         title: "Dakshinmukhi Sanctum & Swarna Kalash",
         desc: "The sacred subterranean sanctum with self-manifested (Swayambhu) Jyotirlinga topped by a gleaming golden temple spire.",
-        img: "https://images.unsplash.com/photo-1658730487395-dcc99f5d997c?w=800&h=500&fit=crop&auto=format",
+        img: travellerFleetImg,
         tag: "Holy Sanctum",
       },
       {
         title: "World Famous Bhasma Aarti (04:00 AM)",
         desc: "Exclusive 2:30 AM doorstep hotel pickup ensuring comfortable, on-time entry for Bhasma Aarti devotees and VIP line arrangements.",
-        img: "https://images.unsplash.com/photo-1694667509674-676629c9d069?w=800&h=500&fit=crop&auto=format",
+        img: innovaImg,
         tag: "Sacred Ritual",
       },
       {
         title: "Shri Mahakal Lok Corridor",
         desc: "A breathtaking spiritual corridor featuring 108 grand stone pillars, massive Shiva-Parvati murals, Rudra Sagar lake and musical fountains.",
-        img: "https://images.unsplash.com/photo-1658730510499-8c8e84f4db38?w=800&h=500&fit=crop&auto=format",
+        img: travellerFront2Img,
         tag: "Grand Corridor",
       },
       {
-        title: "Nagchandreshwar Mandir (Top Floor)",
-        desc: "Historic shrine opened only once a year on Nag Panchami, housing the unique idol of Shiva-Parvati seated on the serpent bed.",
-        img: "https://images.unsplash.com/photo-1658730487395-dcc99f5d997c?w=800&h=500&fit=crop&auto=format",
-        tag: "Rare Darshan",
+        title: "24/7 Station & Temple Pickups",
+        desc: "Round the clock verified drivers dedicated for Bhasma Aarti, VIP entry gates, and hassle-free returns.",
+        img: travellerSideImg,
+        tag: "Dedicated Fleet",
       },
     ],
     itinerary: [
@@ -191,7 +193,7 @@ export const DESTINATION_SECTIONS: DestinationSectionData[] = [
     travelTime: "3.5 to 4 Hours one-way",
     bestTime: "September to March (Pleasant weather & brimming Narmada)",
     idealDuration: "Full Day (Early morning departure to evening return)",
-    heroImage: "https://images.unsplash.com/photo-1667667186743-924d5172fa4a?w=1400&h=700&fit=crop&auto=format",
+    heroImage: bannerImg,
     overview: "Nestled on the holy island of Mandhata in the Narmada River, Omkareshwar is naturally contoured in the shape of the sacred Hindu symbol 'OM' (ॐ). Together with the Mamleshwar Jyotirlinga on the south bank, visiting both sanctums completes the sacred Omkareshwar pilgrimage. Pilgrims enjoy holy dip in Narmada, boat crossings, the iconic suspension bridges, and the newly inaugurated Statue of Oneness (Adi Shankaracharya).",
     significance: "Completing both Mahakaleshwar and Omkareshwar Jyotirlingas in one unified journey is regarded as one of the most meritorious yatras in Hindu faith.",
     themeColor: {
@@ -204,25 +206,25 @@ export const DESTINATION_SECTIONS: DestinationSectionData[] = [
       {
         title: "Omkareshwar Mandhata Temple",
         desc: "The five-storeyed nagara style temple shrine perched on the Om-shaped island overlooking the turquoise waters of Narmada.",
-        img: "https://images.unsplash.com/photo-1667667186743-924d5172fa4a?w=800&h=500&fit=crop&auto=format",
+        img: bannerImg,
         tag: "Island Sanctum",
       },
       {
         title: "Mamleshwar (Amareshwar) Temple",
         desc: "Ancient stone temple on the south bank of River Narmada; darshan here is mandatory to complete the Omkareshwar Jyotirlinga blessing.",
-        img: "https://images.unsplash.com/photo-1658730557753-caf6bbc4a0bc?w=800&h=500&fit=crop&auto=format",
+        img: traveller7Img,
         tag: "South Bank Jyotirlinga",
       },
       {
         title: "Sacred Narmada Sangam & Boating",
         desc: "Serene boat ride across River Narmada, reaching the holy Sangam of Narmada and Kaveri rivers with picturesque valley vistas.",
-        img: "https://images.unsplash.com/photo-1584185438408-88532feff8d4?w=800&h=500&fit=crop&auto=format",
+        img: tourMomentImg,
         tag: "Holy Sangam",
       },
       {
         title: "Statue of Oneness & Hanging Bridges",
         desc: "The colossal 108-foot bronze statue of Jagadguru Adi Shankaracharya atop Mandhata hill and pedestrian suspension bridges.",
-        img: "https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?w=800&h=500&fit=crop&auto=format",
+        img: travellerSideImg,
         tag: "Modern Monument",
       },
     ],
@@ -256,7 +258,7 @@ export const DESTINATION_SECTIONS: DestinationSectionData[] = [
     travelTime: "3.5 to 4 Hours one-way",
     bestTime: "July to March (Spectacular in Monsoon & Winter greenery)",
     idealDuration: "1 to 2 Days",
-    heroImage: "https://images.unsplash.com/photo-1784240256663-f53a45989d1c?w=1400&h=700&fit=crop&auto=format",
+    heroImage: travellerFront1Img,
     overview: "Perched gracefully atop the Vindhya range, Mandu (Mandav) is celebrated as India's 'City of Joy'. Famed for the legendary romance of poet-king Baz Bahadur and Rani Roopmati, this medieval fortress city boasts breathtaking Afghan architecture, floating palaces nestled between serene lakes, massive stone gateways, and panoramic viewpoints over the Narmada plateau.",
     significance: "A premier UNESCO-level heritage wonder in Madhya Pradesh, Mandu comes alive with emerald green hills, waterfalls, and romantic monuments during monsoon and winter.",
     themeColor: {
@@ -269,25 +271,25 @@ export const DESTINATION_SECTIONS: DestinationSectionData[] = [
       {
         title: "Jahaz Mahal (Ship Palace)",
         desc: "The 15th-century architectural marvel designed like a giant floating ship situated between Kapur Talao and Munja Talao lakes.",
-        img: "https://images.unsplash.com/photo-1784240256663-f53a45989d1c?w=800&h=500&fit=crop&auto=format",
+        img: travellerFront1Img,
         tag: "Floating Palace",
       },
       {
         title: "Rani Roopmati Pavilion",
         desc: "Perched high on a cliff edge, built so the singer queen Roopmati could gaze upon her beloved sacred Narmada River every morning.",
-        img: "https://images.unsplash.com/photo-1710987759289-ee6d002cb7d9?w=800&h=500&fit=crop&auto=format",
+        img: tavernaImg,
         tag: "Cliff Viewpoint",
       },
       {
         title: "Hindola Mahal (Swinging Palace)",
         desc: "Famous for its dramatically slanting 77-degree side walls giving an illusion of a swinging structure, constructed with massive Afghan stonework.",
-        img: "https://images.unsplash.com/photo-1641803187805-3592b4cfeddb?w=800&h=500&fit=crop&auto=format",
+        img: travellerSideImg,
         tag: "Architectural Marvel",
       },
       {
         title: "Hoshang Shah's Marble Tomb",
         desc: "India's first completely white marble mausoleum which served as the prime architectural inspiration for the Taj Mahal in Agra.",
-        img: "https://images.unsplash.com/photo-1784240256561-96f3264d221a?w=800&h=500&fit=crop&auto=format",
+        img: travellerFleetImg,
         tag: "Marble Heritage",
       },
     ],
@@ -321,7 +323,7 @@ export const DESTINATION_SECTIONS: DestinationSectionData[] = [
     travelTime: "3.5 Hours one-way",
     bestTime: "Round the year (Special during Shiv Mahapuran Katha & Shivratri)",
     idealDuration: "Full Day / 1 Day Yatra",
-    heroImage: "https://images.unsplash.com/photo-1658730487395-dcc99f5d997c?w=1400&h=700&fit=crop&auto=format",
+    heroImage: tourMomentImg,
     overview: "Shree Kubreshwar Dham situated in Chitavalya Hema village near Sehore has emerged as one of India's most vibrant and revered Shiva pilgrimage destinations. Led by the spiritual guidance of International Katha Vachak Pujya Pandit Pradeep Ji Mishra, millions of Shiva devotees travel here to seek divine blessings, offer Belpatra to the holy Shivling, participate in mass Shiv Mahapuran recitations, and receive sacred consecrated Rudraksh.",
     significance: "Devotees firmly believe that offering one pot of water (Ek Lota Jal) and praying with pure heart at Kubreshwar Dham resolves health, financial and family distress.",
     themeColor: {
@@ -334,25 +336,25 @@ export const DESTINATION_SECTIONS: DestinationSectionData[] = [
       {
         title: "Pavitra Kubreshwar Mahadev Shivling",
         desc: "The sacred central Shivling consecrated with continuous Vedic mantras, Belpatra archana, and divine abhishek by devotees.",
-        img: "https://images.unsplash.com/photo-1658730487395-dcc99f5d997c?w=800&h=500&fit=crop&auto=format",
+        img: tourMomentImg,
         tag: "Main Sanctum",
       },
       {
         title: "Abhimantrit Rudraksh Prasad",
         desc: "Sacred sanctified Rudraksh distribution and parikrama grounds revered for miraculous healing and peace blessings.",
-        img: "https://images.unsplash.com/photo-1584185438408-88532feff8d4?w=800&h=500&fit=crop&auto=format",
+        img: travellerFleetImg,
         tag: "Divine Prasad",
       },
       {
         title: "Shiv Mahapuran Katha Grounds",
         desc: "Vast spiritual pandals and ashram grounds hosting lakhs of devotees during spiritual discourse and satsang programs.",
-        img: "https://images.unsplash.com/photo-1658730510499-8c8e84f4db38?w=800&h=500&fit=crop&auto=format",
+        img: traveller7Img,
         tag: "Satsang Grounds",
       },
       {
         title: "Direct Door-to-Door Devotee Transport",
         desc: "Zero-stress direct transfers right up to the temple gate with guaranteed parking waiting and timely return to Ujjain/Indore.",
-        img: "https://images.unsplash.com/photo-1784240256561-96f3264d221a?w=800&h=500&fit=crop&auto=format",
+        img: bannerImg,
         tag: "Devotee Transport",
       },
     ],

@@ -1,3 +1,5 @@
+import { travellerFleetImg, bannerImg, innovaImg, tourMomentImg } from "@/data/radheImages";
+
 interface AboutProps {
   onNavigate: (page: string) => void;
 }
@@ -19,8 +21,8 @@ export default function About({ onNavigate }: AboutProps) {
       {/* HERO */}
       <section className="relative h-72 md:h-96 overflow-hidden">
         <img
-          src="https://images.unsplash.com/photo-1658730487395-dcc99f5d997c?w=1920&h=800&fit=crop&auto=format"
-          alt="Mahakaleshwar Temple Ujjain"
+          src={travellerFleetImg}
+          alt="Mahakaleshwar Temple Ujjain Fleet"
           className="w-full h-full object-cover"
         />
         <div className="absolute inset-0 bg-[#1A1214]/70" />
@@ -57,13 +59,13 @@ export default function About({ onNavigate }: AboutProps) {
             </div>
             <div className="grid grid-cols-2 gap-4">
               <img
-                src="https://images.unsplash.com/photo-1658730487395-dcc99f5d997c?w=600&h=700&fit=crop&auto=format"
-                alt="Mahakaleshwar Temple"
+                src={innovaImg}
+                alt="Shree Radhe Radhe Travels Vehicle"
                 className="rounded-xl w-full h-64 object-cover mt-8"
               />
               <img
-                src="https://images.unsplash.com/photo-1584185438408-88532feff8d4?w=600&h=700&fit=crop&auto=format"
-                alt="Ram Ghat Ujjain"
+                src={tourMomentImg}
+                alt="Shree Radhe Radhe Travels Yatra"
                 className="rounded-xl w-full h-64 object-cover"
               />
             </div>
@@ -110,8 +112,8 @@ export default function About({ onNavigate }: AboutProps) {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
               <img
-                src="https://images.unsplash.com/photo-1784240256561-96f3264d221a?w=800&h=600&fit=crop&auto=format"
-                alt="Scenic India road journey"
+                src={bannerImg}
+                alt="Scenic road journey"
                 className="rounded-2xl w-full h-80 object-cover"
               />
             </div>

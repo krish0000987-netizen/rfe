@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { travellerFleetImg } from "@/data/radheImages";
 
 export default function Contact() {
   const [form, setForm] = useState({
@@ -28,7 +29,7 @@ Notes: ${form.notes}`;
       {/* HERO */}
       <section className="relative h-64 md:h-80 overflow-hidden">
         <img
-          src="https://images.unsplash.com/photo-1658730487395-dcc99f5d997c?w=1920&h=600&fit=crop&auto=format"
+          src={travellerFleetImg}
           alt="Contact Shree Radhe Radhe Travels"
           className="w-full h-full object-cover"
         />

@@ -1,3 +1,16 @@
+import {
+  travellerFleetImg,
+  bannerImg,
+  travellerFront1Img,
+  tourMomentImg,
+  innovaImg,
+  dzireImg,
+  tavernaImg,
+  indigoImg,
+  traveller7Img,
+  travellerSideImg,
+} from "@/data/radheImages";
+
 interface UjjainDarshanProps {
   onNavigate: (page: string) => void;
 }
@@ -5,42 +18,42 @@ interface UjjainDarshanProps {
 const destinations = [
   {
     name: "Mahakaleshwar Temple",
-    img: "https://images.unsplash.com/photo-1658730487395-dcc99f5d997c?w=500&h=350&fit=crop&auto=format",
+    img: travellerFleetImg,
     desc: "One of the 12 Jyotirlingas of Lord Shiva, Mahakaleshwar is the spiritual heart of Ujjain and the primary pilgrimage destination.",
   },
   {
     name: "Mahakal Lok",
-    img: "https://images.unsplash.com/photo-1658730510499-8c8e84f4db38?w=500&h=350&fit=crop&auto=format",
+    img: bannerImg,
     desc: "The magnificent Mahakal Lok corridor — a grand spiritual walkway lined with sculptures and depictions of Lord Shiva.",
   },
   {
     name: "Ram Ghat",
-    img: "https://images.unsplash.com/photo-1584185438408-88532feff8d4?w=500&h=350&fit=crop&auto=format",
+    img: tourMomentImg,
     desc: "The most prominent ghat on the Shipra River, Ram Ghat is a sacred site for rituals and the venue of the grand Kumbh Mela.",
   },
   {
     name: "Kal Bhairav Temple",
-    img: "https://images.unsplash.com/photo-1658730600296-a0276b5749ca?w=500&h=350&fit=crop&auto=format",
+    img: tavernaImg,
     desc: "An ancient temple dedicated to Kal Bhairav, considered the guardian deity of Ujjain city.",
   },
   {
     name: "Harsiddhi Mata Temple",
-    img: "https://images.unsplash.com/photo-1658730458768-8b8cc0c00955?w=500&h=350&fit=crop&auto=format",
+    img: indigoImg,
     desc: "A shakti peetha of great importance, Harsiddhi Mata temple is revered by devotees throughout India.",
   },
   {
     name: "Mangalnath Temple",
-    img: "https://images.unsplash.com/photo-1658730557753-caf6bbc4a0bc?w=500&h=350&fit=crop&auto=format",
+    img: travellerSideImg,
     desc: "Situated on the banks of Shipra, Mangalnath is considered the birthplace of Mars and is a significant astrological site.",
   },
   {
     name: "Sandipani Ashram",
-    img: "https://images.unsplash.com/photo-1705291490318-6cc8cb88a1f3?w=500&h=350&fit=crop&auto=format",
+    img: dzireImg,
     desc: "The ancient ashram where Lord Krishna, Balarama and Sudama received their education from Guru Sandipani.",
   },
   {
     name: "Vedh Shala (Observatory)",
-    img: "https://images.unsplash.com/photo-1641803187805-3592b4cfeddb?w=500&h=350&fit=crop&auto=format",
+    img: traveller7Img,
     desc: "An ancient astronomical observatory built by Maharaja Jai Singh II — one of five he built across India.",
   },
 ];
@@ -71,7 +84,7 @@ export default function UjjainDarshan({ onNavigate }: UjjainDarshanProps) {
       {/* HERO */}
       <section className="relative h-[70vh] min-h-[500px] overflow-hidden">
         <img
-          src="https://images.unsplash.com/photo-1658730487395-dcc99f5d997c?w=1920&h=1080&fit=crop&auto=format"
+          src={travellerFleetImg}
           alt="Mahakaleshwar Jyotirlinga Ujjain"
           className="w-full h-full object-cover"
         />
@@ -116,7 +129,7 @@ export default function UjjainDarshan({ onNavigate }: UjjainDarshanProps) {
               </div>
             </div>
             <img
-              src="https://images.unsplash.com/photo-1658730487395-dcc99f5d997c?w=800&h=600&fit=crop&auto=format"
+              src={bannerImg}
               alt="Mahakaleshwar Temple"
               className="rounded-2xl w-full h-80 object-cover"
             />

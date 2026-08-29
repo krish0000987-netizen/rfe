@@ -7,6 +7,7 @@ import travellerFront1Img from "@/imports/WhatsApp_Image_2026-08-27_at_2.20.13_P
 import travellerFront2Img from "@/imports/WhatsApp_Image_2026-08-27_at_2.20.14_PM.jpeg";
 import indigoImg from "@/imports/WhatsApp_Image_2026-08-27_at_2.20.15_PM__1_.jpeg";
 import travellerSideImg from "@/imports/WhatsApp_Image_2026-08-27_at_2.20.16_PM.jpeg";
+import bannerImg from "@/imports/WhatsApp_Image_2026-08-27_at_2.20.18_PM.jpeg";
 
 interface VehiclesProps {
   onNavigate: (page: string) => void;
@@ -227,7 +228,7 @@ export default function Vehicles({ onNavigate }: VehiclesProps) {
       {/* HERO */}
       <section className="relative h-72 md:h-96 overflow-hidden">
         <img
-          src="https://images.unsplash.com/photo-1784240256561-96f3264d221a?w=1920&h=800&fit=crop&auto=format"
+          src={bannerImg}
           alt="Vehicle fleet road journey"
           className="w-full h-full object-cover"
         />

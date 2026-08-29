@@ -12,6 +12,21 @@ import travellerSideImg from "@/imports/WhatsApp_Image_2026-08-27_at_2.20.16_PM.
 import bannerImg from "@/imports/WhatsApp_Image_2026-08-27_at_2.20.18_PM.jpeg";
 import tourMomentImg from "@/imports/WhatsApp_Image_2026-08-27_at_2.20.18_PM_1_.jpeg";
 
+export {
+  innovaImg,
+  tavernaImg,
+  traveller7Img,
+  dzireImg,
+  travellerFront1Img,
+  travellerFront2Img,
+  travellerFleetImg,
+  indigoImg,
+  travellerSideImg,
+  bannerImg,
+  tourMomentImg,
+};
+
+
 // Bus / Coach external images (Unsplash – used where real bus photo not available)
 const bus30Img = "https://images.unsplash.com/photo-1570125909232-eb263c188f7e?w=800&h=600&fit=crop&auto=format";
 const bus40Img = "https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?w=800&h=600&fit=crop&auto=format";

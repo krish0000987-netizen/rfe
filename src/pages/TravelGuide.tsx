@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { travellerFleetImg } from "@/data/radheImages";
 
 interface TravelGuideProps {
   onNavigate: (page: string) => void;
@@ -103,7 +104,7 @@ export default function TravelGuide({ onNavigate }: TravelGuideProps) {
       {/* HERO */}
       <section className="relative h-64 md:h-80 overflow-hidden">
         <img
-          src="https://images.unsplash.com/photo-1658730487395-dcc99f5d997c?w=1920&h=600&fit=crop&auto=format"
+          src={travellerFleetImg}
           alt="Plan your Ujjain journey"
           className="w-full h-full object-cover"
         />
