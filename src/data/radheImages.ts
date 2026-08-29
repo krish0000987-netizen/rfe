@@ -1,5 +1,3 @@
-// Use Vite imports so images are bundled + hashed and always load (even with Figma base URL / preview iframe)
-// No need for /public/radhe alone – imports guarantee correct URLs in dev, preview and build.
 import innovaImg from "@/imports/WhatsApp_Image_2026-08-27_at_2.20.15_PM.jpeg";
 import tavernaImg from "@/imports/WhatsApp_Image_2026-08-27_at_2.20.16_PM__1_.jpeg";
 import traveller7Img from "@/imports/WhatsApp_Image_2026-08-27_at_2.20.17_PM__1_.jpeg";
@@ -11,6 +9,9 @@ import indigoImg from "@/imports/WhatsApp_Image_2026-08-27_at_2.20.15_PM__1_.jpe
 import travellerSideImg from "@/imports/WhatsApp_Image_2026-08-27_at_2.20.16_PM.jpeg";
 import bannerImg from "@/imports/WhatsApp_Image_2026-08-27_at_2.20.18_PM.jpeg";
 import tourMomentImg from "@/imports/WhatsApp_Image_2026-08-27_at_2.20.18_PM_1_.jpeg";
+import solankiTravellerMp13Img from "@/imports/solanki_traveller_mp13.jpg";
+import solankiTravellerMp09Img from "@/imports/solanki_traveller_mp09.jpg";
+import innovaCrystaRearImg from "@/imports/innova_crysta_radhe_rear.jpg";
 
 export {
   innovaImg,
@@ -24,7 +25,11 @@ export {
   travellerSideImg,
   bannerImg,
   tourMomentImg,
+  solankiTravellerMp13Img,
+  solankiTravellerMp09Img,
+  innovaCrystaRearImg,
 };
+
 
 
 // Bus / Coach external images (Unsplash – used where real bus photo not available)
@@ -50,6 +55,45 @@ export const RADHE_FLEET_IMAGES: RadheImageItem[] = [
   // =============================================================
   // 2nd Number – TEMPO TRAVELLER (12, 14, 17, 20, 26 Seater)
   // =============================================================
+  {
+    id: "traveller-12-solanki-mp13",
+    src: solankiTravellerMp13Img,
+    title: "Force Traveller Solanki (MP 13 ZD 5254)",
+    category: "Tempo Traveller",
+    badge: "12-14 Seater • AC",
+    passengers: "12-14",
+    luggage: "Full Rear Storage + Roof",
+    ac: true,
+    ideal: "Mahakal Bhasma Aarti & Omkareshwar Group Yatra",
+    description: "2x2 high-cushion pushback seats, chilled AC, sanitized interior, verified driver for comfortable pilgrimage.",
+    tag: "Tempo Travellers",
+  },
+  {
+    id: "traveller-17-solanki-mp09",
+    src: solankiTravellerMp09Img,
+    title: "Force Traveller Solanki (MP 09 FA 8612)",
+    category: "Tempo Traveller",
+    badge: "17 Seater • Super Deluxe",
+    passengers: "17",
+    luggage: "Heavy Luggage Carrier",
+    ac: true,
+    ideal: "Extended MP Pilgrimage & Big Families",
+    description: "Spacious 17-seater with premium push-back seating, powerful surround cooling and experienced highway driver.",
+    tag: "Tempo Travellers",
+  },
+  {
+    id: "innova-crysta-rear-radhe",
+    src: innovaCrystaRearImg,
+    title: "Toyota Innova Crysta (MP 09 BD 6826)",
+    category: "SUV",
+    badge: "7+1 Seater • Shree Radhe Radhe",
+    passengers: "7+1 (8)",
+    luggage: "4 Large Bags",
+    ac: true,
+    ideal: "VIP Family Darshan & Outstation Tours",
+    description: "Top-tier Innova Crysta with captain seats, dual AC and smooth highway suspension for sacred tours.",
+    tag: "SUVs & MUVs",
+  },
   {
     id: "traveller-12",
     src: travellerFront1Img,
@@ -322,6 +366,21 @@ export const RADHE_FLEET_IMAGES: RadheImageItem[] = [
 
 export const RADHE_PHOTO_GALLERY = [
   {
+    src: solankiTravellerMp13Img,
+    title: "Force Traveller Solanki MP 13",
+    label: "Own Fleet",
+  },
+  {
+    src: solankiTravellerMp09Img,
+    title: "Force Traveller Solanki MP 09",
+    label: "17 Seater",
+  },
+  {
+    src: innovaCrystaRearImg,
+    title: "Toyota Innova Crysta MP 09",
+    label: "VIP SUV",
+  },
+  {
     src: travellerFront1Img,
     title: "Force Traveller – Front View",
     label: "Tempo Traveller",
@@ -380,6 +439,24 @@ export const RADHE_PHOTO_GALLERY = [
 
 export const RADHE_JOURNEY_MOMENTS = [
   {
+    src: solankiTravellerMp13Img,
+    title: "Solanki Force Traveller at Mahakal Darshan",
+    subtitle: "Doorstep Pickup for Early Morning Bhasma Aarti",
+    badge: "12-14 Seater",
+  },
+  {
+    src: solankiTravellerMp09Img,
+    title: "Force Traveller Deluxe on Highway Yatra",
+    subtitle: "Ujjain to Omkareshwar & Mandav Tour",
+    badge: "17 Seater",
+  },
+  {
+    src: innovaCrystaRearImg,
+    title: "Innova Crysta Shree Radhe Radhe VIP Tour",
+    subtitle: "Clean, Sanitized & Premium Family Experience",
+    badge: "VIP SUV",
+  },
+  {
     src: travellerFleetImg,
     title: "Fleet Ready for Mahakal Darshan",
     subtitle: "Ujjain Local & Mahakal Lok Tours",
@@ -392,27 +469,9 @@ export const RADHE_JOURNEY_MOMENTS = [
     badge: "Outstation Specialist",
   },
   {
-    src: travellerFront1Img,
-    title: "Force Traveller Group Departure",
-    subtitle: "Comfortable Yatra for 12–17 Pilgrims",
-    badge: "Group Comfort",
-  },
-  {
-    src: innovaImg,
-    title: "Toyota Innova Crysta VIP Service",
-    subtitle: "Clean, Sanitized & Premium Experience",
-    badge: "Luxury SUV",
-  },
-  {
     src: dzireImg,
     title: "Maruti Dzire Station & Temple Pickups",
     subtitle: "24/7 Bhasma Aarti Timely Drops",
     badge: "City Darshan",
-  },
-  {
-    src: tourMomentImg,
-    title: "Devotee Journey with Shree Radhe Radhe",
-    subtitle: "Courteous Chauffeurs with Temple Expertise",
-    badge: "Sacred Moments",
   },
 ];
